@@ -7,6 +7,9 @@
     <!-- Provider application information for computing dependencies -->
     <dubbo:application name="hello-world-app"  />
 
+	<!--for dubbo monitor-->
+	<dubbo:monitor protocol="registry" />
+    
     <!-- Using the multicast broadcast registry to expose service addresses -->
     <dubbo:registry address="multicast://224.5.6.7:1234" />
 
